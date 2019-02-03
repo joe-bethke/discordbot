@@ -1,3 +1,4 @@
 /env/*
 /__pycache__/*
 discordbot.code-workspace
+auth.env
