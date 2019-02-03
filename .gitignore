@@ -2,3 +2,5 @@
 /__pycache__/*
 discordbot.code-workspace
 auth.env
+.vscode/launch.json
+.vscode/settings.json
