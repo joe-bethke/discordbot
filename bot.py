@@ -41,7 +41,7 @@ async def on_voice_state_update(before, after):
                                       "Okay bye {n}... thanks for the warm goodbye...".format(n=before.name))
     if not before.voice.is_afk and after.voice.is_afk:
         before_doc.afk()
-    if before.voice.is_afk and after.voice.is_afk:
+    if before.voice.is_afk and not after.voice.is_afk:
         before_doc.afk_exit()
 
 
