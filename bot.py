@@ -48,7 +48,7 @@ async def on_voice_state_update(before, after):
 @client.event
 async def on_message(message):
     member_doc = MemberDocument(message.author)
-    member_doc.message(str(message))
+    member_doc.message(str(message.content))
 
 
 client.run(TOKEN)

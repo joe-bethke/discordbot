@@ -31,6 +31,7 @@ class MemberDocument(object):
             now = datetime.now()
             document = {
                 "id": member.id,
+                "username": member.name,
                 "join_date": now.strftime(DATE_FORMAT),
                 "join_time": now.strftime(TIME_FORMAT),
                 "messages": list(),
