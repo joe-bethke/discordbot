@@ -49,6 +49,8 @@ async def on_voice_state_update(before, after):
 async def on_message(message):
     member_doc = MemberDocument(message.author)
     member_doc.message(str(message.content))
+    if message.content == "!connection_time":
+        await client.send_message(default_channel(message.author.server), member_doc.total_connection_time())
 
 
 client.run(TOKEN)
